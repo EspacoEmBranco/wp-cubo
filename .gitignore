@@ -1,0 +1,62 @@
+# WordPress core
+docroot/wp-admin/
+docroot/wp-includes/
+docroot/index.php
+docroot/license.txt
+docroot/readme.html
+docroot/wp-activate.php
+docroot/wp-blog-header.php
+docroot/wp-comments-post.php
+docroot/wp-cron.php
+docroot/wp-links-opml.php
+docroot/wp-load.php
+docroot/wp-login.php
+docroot/wp-mail.php
+docroot/wp-settings.php
+docroot/wp-signup.php
+docroot/wp-trackback.php
+docroot/xmlrpc.php
+docroot/wp-config-sample.php
+
+# WordPress config (credentials)
+docroot/wp-config.php
+
+# WordPress generated content
+docroot/wp-content/uploads/
+docroot/wp-content/cache/
+docroot/wp-content/upgrade/
+docroot/wp-content/advanced-cache.php
+docroot/wp-content/wp-cache-config.php
+
+# Third-party plugins and themes (only cubo-* plugins and cubo-* themes are ours)
+docroot/wp-content/plugins/*
+!docroot/wp-content/plugins/cubo-*/
+docroot/wp-content/themes/
+
+# Plugin build artifacts
+docroot/wp-content/plugins/**/node_modules/
+docroot/wp-content/plugins/**/build/
+docroot/wp-content/plugins/**/.cache/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Docker
+mysql_data/
+
+# Claude
+CLAUDE.md
+.claude/
+
+# Project docs (private)
+ROADMAP.md
