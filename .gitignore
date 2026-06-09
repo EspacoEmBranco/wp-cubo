@@ -31,10 +31,12 @@ docroot/wp-content/wp-cache-config.php
 # Third-party plugins and themes (only cubo-* plugins and cubo-* themes are ours)
 docroot/wp-content/plugins/*
 !docroot/wp-content/plugins/cubo-*/
-docroot/wp-content/themes/
+docroot/wp-content/themes/*
+!docroot/wp-content/themes/cubo-*/
 
 # Plugin build artifacts
 docroot/wp-content/plugins/**/node_modules/
+docroot/wp-content/plugins/**/vendor/
 docroot/wp-content/plugins/**/build/
 docroot/wp-content/plugins/**/.cache/
 
