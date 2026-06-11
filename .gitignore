@@ -21,12 +21,16 @@ docroot/wp-config-sample.php
 # WordPress config (credentials)
 docroot/wp-config.php
 
-# WordPress generated content
+# WordPress generated content and drop-ins
 docroot/wp-content/uploads/
 docroot/wp-content/cache/
 docroot/wp-content/upgrade/
 docroot/wp-content/advanced-cache.php
 docroot/wp-content/wp-cache-config.php
+docroot/wp-content/db.php
+docroot/wp-content/db-error.php
+docroot/wp-content/object-cache.php
+docroot/wp-content/maintenance.php
 
 # Third-party plugins and themes (only cubo-* plugins and cubo-* themes are ours)
 docroot/wp-content/plugins/*
