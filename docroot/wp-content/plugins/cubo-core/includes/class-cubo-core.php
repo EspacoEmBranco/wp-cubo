@@ -23,16 +23,35 @@ class Cubo_Core
     }
 
     /**
-     * Registers all module hooks with the loader.
-     * Each module is instantiated here an its hooks added.
-     * Expand this method as modules are built.
+     * Instantiates all modules and registers their hooks with the loader.
      */
     private function define_hooks(): void
     {
-        // Modules are registered here as they are built.
-        // Example:
-        // $cleanup = new Cleanup\Feeds();
-        // $this->loader->add_action('init', $cleanup, 'disable_feeds');
+        // Cleanup
+        (new Cleanup\Feeds())->register($this->loader);
+        (new Cleanup\Head())->register($this->loader);
+        (new Cleanup\Security())->register($this->loader);
+        (new Cleanup\Performance())->register($this->loader);
+
+        // Admin
+        (new Admin\Menu())->register($this->loader);
+        (new Admin\Dashboard())->register($this->loader);
+        (new Admin\Branding())->register($this->loader);
+
+        // Assets
+        (new Assets\Assets())->register($this->loader);
+
+        // Content
+        (new Content\Content())->register($this->loader);
+
+        // Media
+        (new Media\Media())->register($this->loader);
+
+        // Mail
+        (new Mail\Mail())->register($this->loader);
+
+        // Users
+        (new Users\Users())->register($this->loader);
     }
 
     /**

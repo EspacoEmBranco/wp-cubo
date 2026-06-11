@@ -31,5 +31,15 @@ services:
     depends_on:
       - php
 
+  cron:
+    build: .
+    restart: unless-stopped
+    volumes:
+      - ./docroot:/var/www/html
+    depends_on:
+      - mysql
+      - php
+    entrypoint: sh -c "while true; do wp --path=/var/www/html cron event run --due-now --quiet 2>/dev/null; sleep 300; done"
+
 volumes:
   mysql_data:
