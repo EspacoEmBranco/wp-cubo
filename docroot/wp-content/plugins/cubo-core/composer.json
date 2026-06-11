@@ -1,0 +1,14 @@
+{
+  "name": "cubo/core",
+  "description": "Cubo Core — shared foundation for all Cubo plugins",
+  "type": "wordpress-plugin",
+  "require": {
+    "php": ">=8.3"
+  },
+  "autoload": {
+    "classmap": ["includes/"]
+  },
+  "config": {
+    "optimize-autoloader": true
+  }
+}
