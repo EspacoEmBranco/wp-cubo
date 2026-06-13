@@ -38,6 +38,12 @@ docroot/wp-content/plugins/*
 docroot/wp-content/themes/*
 !docroot/wp-content/themes/cubo-*/
 
+# Dev tooling
+vendor/
+
+# Logs
+*.log
+
 # Plugin build artifacts
 docroot/wp-content/plugins/**/node_modules/
 docroot/wp-content/plugins/**/vendor/

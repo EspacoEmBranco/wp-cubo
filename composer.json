@@ -1,0 +1,14 @@
+{
+  "name": "cubo/project",
+  "description": "Cubo personal dashboard — dev tooling",
+  "require-dev": {
+    "phpstan/phpstan": "^1.10",
+    "szepeviktor/phpstan-wordpress": "^1.3"
+  },
+  "scripts": {
+    "phpstan": "vendor/bin/phpstan analyse"
+  },
+  "config": {
+    "optimize-autoloader": true
+  }
+}

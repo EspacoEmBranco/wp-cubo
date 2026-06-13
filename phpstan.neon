@@ -1,0 +1,15 @@
+includes:
+  - vendor/szepeviktor/phpstan-wordpress/extension.neon
+
+parameters:
+  level: 5
+  paths:
+    - docroot/wp-content/plugins/cubo-core
+    - docroot/wp-content/plugins/cubo-work
+  excludePaths:
+    - docroot/wp-content/plugins/cubo-core/vendor
+    - docroot/wp-content/plugins/cubo-work/vendor
+  bootstrapFiles:
+    - phpstan-bootstrap.php
+    - docroot/wp-content/plugins/cubo-core/vendor/autoload.php
+    - docroot/wp-content/plugins/cubo-work/vendor/autoload.php
