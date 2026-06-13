@@ -43,8 +43,9 @@ abstract class Base_REST_Controller extends \WP_REST_Controller
 
     /**
      * Registers REST routes. Hooked to rest_api_init.
+     * Subclasses must override this method.
      */
-    abstract public function register_routes(): void;
+    public function register_routes(): void {}
 
     /**
      * Default permission check — requires the user to be logged in.
