@@ -1,6 +1,6 @@
-    <?php
+<?php
 
-    namespace Cubo\Work\Meta;
+namespace Cubo\Work\Meta;
 
 /**
  * Registers and handles meta fields for the cubo_job post type.
